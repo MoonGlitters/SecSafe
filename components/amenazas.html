@@ -11,7 +11,7 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Mis estilos -->
-    <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css">
     <script defer type="module" src="./ASSETS/JS/script.js"></script>
 </head>
 <body>
@@ -22,78 +22,118 @@
             <span class="text-light bi bi-list"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="text-light nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                <a class="text-light nav-link" href="./amenazas.html">Amenazas</a>
-                <a class="text-light nav-link" href="./listaSeguridad.html">Consejos</a>
-            </div>
+                <div class="navbar-nav">
+                    <a class="text-light nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="text-light nav-link" href="./amenazas.html">Amenazas</a>
+                    <a class="text-light nav-link" href="./listaSeguridad.html">Consejos</a>
+                </div>
             </div>
         </div>
     </nav>
-    <section class="bg-dark pt-3 pb-3">
-        <div class="container-fluid">
-            <div class="card border-danger mb-3">
-                <div class="card-header bg-danger text-white">⚠️ Phishing</div>
-                <div class="card-body">
-                    <h5 class="card-title">¿Qué es?</h5>
-                    <p class="card-text">Técnica de engaño que suplanta identidades para robar datos sensibles mediante correos, SMS o páginas web falsas.</p>
-                    <h5 class="card-title">Como Protegerse: </h5>
-                    <ul>
-                        <li>Verifica la URL y el remitente.</li>
-                        <li>No descargues archivos sospechosos.</li>
-                        <li>Usa autenticación en dos pasos (2FA).</li>
-                    </ul>
-                    <a href="#" class="btn btn-sm btn-outline-danger">Saber más</a>
-                </div>
-                </div>
-                <div class="card border-danger mb-3">
-                    <div class="card-header bg-danger text-white">⚠️ Phishing</div>
-                    <div class="card-body">
-                        <h5 class="card-title">¿Qué es?</h5>
-                        <p class="card-text">Malware que encripta archivos y exige un rescate (generalmente en criptomonedas) para liberarlos.</p>
-                        <h5 class="card-title">Como Protegerse: </h5>
-                        <ul>
-                            <li>Verifica la URL y el remitente.</li>
-                            <li>No descargues archivos sospechosos.</li>
-                            <li>Usa autenticación en dos pasos (2FA).</li>
-                        </ul>
-                        <a href="#" class="btn btn-sm btn-outline-danger">Saber más</a>
+    <section class="bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Principales Amenazas Cibernéticas</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <i class="fas fa-fish me-2"></i> Phishing
+                        </div>
+                        <div class="text-center p-3">
+                            <img class="img-fluid rounded" style="max-height: 200px; width: auto;" src="https://www.bbva.com/wp-content/uploads/2018/10/Portada-Phishing.jpg" alt="Ejemplo de phishing">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué es?</h5>
+                            <p class="card-text">Técnica de engaño que suplanta identidades para robar datos sensibles mediante correos, SMS o páginas web falsas.</p>
+                            <h5 class="card-title">Cómo Protegerse:</h5>
+                            <ul class="mb-4">
+                                <li>Verifica la URL y el remitente</li>
+                                <li>No descargues archivos sospechosos</li>
+                                <li>Usa autenticación en dos pasos (2FA)</li>
+                            </ul>
+                            <a target="_blank" href="https://www.ibm.com/es-es/think/topics/phishing" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-external-link-alt me-2"></i> Saber más
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card border-danger mb-3">
-                    <div class="card-header bg-danger text-white">⚠️ Phishing</div>
-                    <div class="card-body">
-                        <h5 class="card-title">¿Qué es?</h5>
-                        <p class="card-text">Técnica de engaño que suplanta identidades para robar datos sensibles mediante correos, SMS o páginas web falsas.</p>
-                        <h5 class="card-title">Como Protegerse: </h5>
-                        <ul>
-                            <li>Verifica la URL y el remitente.</li>
-                            <li>No descargues archivos sospechosos.</li>
-                            <li>Usa autenticación en dos pasos (2FA).</li>
-                        </ul>
-                        <a href="#" class="btn btn-sm btn-outline-danger">Saber más</a>
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <i class="fas fa-lock me-2"></i> Ransomware
+                        </div>
+                        <div class="text-center p-3">
+                            <img class="img-fluid rounded" style="max-height: 200px; width: auto;" src="https://tm.ibxk.com.br/2020/11/06/06141637972217.jpg" alt="Ejemplo de ransomware">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué es?</h5>
+                            <p class="card-text">Malware que encripta archivos y exige un rescate (generalmente en criptomonedas) para liberarlos.</p>
+                            <h5 class="card-title">Cómo Protegerse:</h5>
+                            <ul class="mb-4">
+                                <li>Haz copias de seguridad periódicas</li>
+                                <li>Actualiza sistemas y software</li>
+                                <li>No pagues el rescate (no garantiza recuperar datos)</li>
+                            </ul>
+                            <a target="_blank" href="https://www.computerweekly.com/es/definicion/Que-es-el-ransomware-Como-funciona-y-como-eliminarlo" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-external-link-alt me-2"></i> Saber más
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card border-danger mb-3">
-                    <div class="card-header bg-danger text-white">⚠️ Phishing</div>
-                    <div class="card-body">
-                        <h5 class="card-title">¿Qué es?</h5>
-                        <p class="card-text">Técnica de engaño que suplanta identidades para robar datos sensibles mediante correos, SMS o páginas web falsas.</p>
-                        <h5 class="card-title">Como Protegerse: </h5>
-                        <ul>
-                            <li>Verifica la URL y el remitente.</li>
-                            <li>No descargues archivos sospechosos.</li>
-                            <li>Usa autenticación en dos pasos (2FA).</li>
-                        </ul>
-                        <a href="#" class="btn btn-sm btn-outline-danger">Saber más</a>
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <i class="fas fa-network-wired me-2"></i> Ataque DDoS
+                        </div>
+                        <div class="text-center p-3">
+                            <img class="img-fluid rounded" style="max-height: 200px; width: auto;" src="https://uploads-ssl.webflow.com/62e153e41d6ee298cc9a98f7/639f44e8fcf307b55d03fe7d_ataque-de-inundacion-http.png" alt="Ejemplo de ataque DDoS">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué es?</h5>
+                            <p class="card-text">Inunda servidores o redes con tráfico falso para saturarlos y dejarlos inoperativos.</p>
+                            <h5 class="card-title">Cómo Protegerse:</h5>
+                            <ul class="mb-4">
+                                <li>Usa servicios de mitigación DDoS (ej. Cloudflare)</li>
+                                <li>Configura firewalls y límites de tasa de solicitudes</li>
+                            </ul>
+                            <a target="_blank" href="https://www.ibm.com/es-es/think/topics/ddos" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-external-link-alt me-2"></i> Saber más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <i class="fas fa-virus me-2"></i> Malware
+                        </div>
+                        <div class="text-center p-3"> 
+                            <img class="img-fluid rounded" style="max-height: 200px; width: 300px;" src="https://uploads-ssl.webflow.com/62e153e41d6ee298cc9a98f7/63907b49066ec86a609b991d_que-es-Malware.png" alt="Ejemplo de malware">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué es?</h5>
+                            <p class="card-text">Software malicioso que infecta dispositivos para robar datos, espiar o dañar sistemas. Incluye virus, troyanos y spyware.</p>
+                            <h5 class="card-title">Cómo Protegerse:</h5>
+                            <ul class="mb-4">
+                                <li>Usa antivirus actualizado</li>
+                                <li>Descarga software solo de fuentes oficiales</li>
+                            </ul>
+                            <a target="_blank" href="https://www.malwarebytes.com/es/malware" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-external-link-alt me-2"></i> Saber más
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-        
+    <section>
 
-    <!-- Bootstrap Script  -->
+    </section>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Bootstrap Script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
