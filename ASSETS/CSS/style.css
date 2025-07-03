@@ -15,5 +15,10 @@
     height: 300px;
     object-fit: cover;
     object-position: center;
-    
 }
+
+
+.card[carrousel] {
+    background-color: rgb(201, 40, 59);
+}
+
