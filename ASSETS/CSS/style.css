@@ -2,6 +2,10 @@
     background: url("../IMG/hero2.avif") center/cover;
 }
 
+.navbar {
+    border-bottom: 2px solid #c9283b;
+}
+
 .full-screen {
     background-color: rgba(0, 6, 11, 0.56);
     display: flex;
@@ -17,8 +21,4 @@
     object-position: center;
 }
 
-
-.card[carrousel] {
-    background-color: rgb(201, 40, 59);
-}
 
