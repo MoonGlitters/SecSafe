@@ -11,11 +11,12 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Mis estilos -->
-    <link rel="stylesheet" href="./ASSETS/CSS/style.css">
-    <script defer type="module" src="./ASSETS/JS/script.js"></script>
+    <link rel="stylesheet" href="../ASSETS/CSS/style.css">
+    <script defer type="module" src="../ASSETS/JS/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg mb-3">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="../index.html">CyberSafe</a>
             <button class="border navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,20 +31,185 @@
             </div>
         </div>
     </nav>
-    <section class="main">
-        <div class="text-light px-4 pt-5 pb-5 text-center">
-            <h1 class="display-4 fw-bold">CyberSeguridad</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">En un mundo cada vez más digitalizado, la ciberseguridad se ha convertido en un escudo esencial para proteger nuestra información, privacidad y sistemas frente a amenazas cibernéticas. Desde ataques de phishing hasta ransomware o brechas de datos, los riesgos en línea evolucionan constantemente, exigiendo mayor conciencia y herramientas robustas de defensa.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Amenazas Comunes</button>
-                    <button type="button" class="btn btn-outline-primary btn-lg px-4">Consejos</button>
+    <section class="container">
+        <div class="accordion" id="seguridadDigitalAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-shield-lock me-2"></i> Contraseñas seguras
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#seguridadDigitalAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Usa contraseñas largas (mínimo 12 caracteres)</li>
+                            <li>Combina mayúsculas, minúsculas, números y símbolos</li>
+                            <li>No reutilices contraseñas en diferentes servicios</li>
+                            <li>Considera usar un gestor de contraseñas como Bitwarden o 1Password</li>
+                            <li>Activa la autenticación en dos factores (2FA) siempre que sea posible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button bg-danger text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-laptop me-2"></i> Navegación segura
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#seguridadDigitalAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Verifica que los sitios web usen HTTPS (candado en la barra de direcciones)</li>
+                            <li>Evita conectarte a redes WiFi públicas sin VPN</li>
+                            <li>Usa extensiones como uBlock Origin para bloquear anuncios y trackers</li>
+                            <li>Mantén tu navegador actualizado</li>
+                            <li>Considera usar navegadores enfocados en privacidad como Firefox o Brave</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button bg-danger text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-envelope-exclamation me-2"></i> Correo electrónico y phishing
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#seguridadDigitalAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Desconfía de correos que solicitan información personal o financiera</li>
+                            <li>Verifica la dirección del remitente (no solo el nombre mostrado)</li>
+                            <li>No hagas clic en enlaces sospechosos - pasa el mouse para ver la URL real</li>
+                            <li>Usa cuentas de correo diferentes para usos importantes (bancario) y menos importantes (registros)</li>
+                            <li>Habilita filtros anti-spam y anti-phishing en tu cliente de correo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="bi bi-phone me-2"></i> Seguridad en dispositivos móviles
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#seguridadDigitalAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Mantén tu sistema operativo y aplicaciones actualizadas</li>
+                            <li>Descarga apps solo de tiendas oficiales (Google Play, App Store)</li>
+                            <li>Revisa los permisos que solicitan las aplicaciones</li>
+                            <li>Usa bloqueo de pantalla (PIN, patrón, huella o reconocimiento facial)</li>
+                            <li>Habilita el cifrado del dispositivo y haz copias de seguridad seguras</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button bg-danger text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <i class="bi bi-cloud me-2"></i> Privacidad en redes sociales
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#seguridadDigitalAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Revisa y ajusta regularmente tus configuraciones de privacidad</li>
+                            <li>Limita la información personal que compartes públicamente</li>
+                            <li>Desactiva la geolocalización en publicaciones</li>
+                            <li>Ten cuidado con los tests y juegos que solicitan acceso a tu perfil</li>
+                            <li>Considera usar seudónimos en lugar de tu nombre real cuando sea posible</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-        
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="container">
+                        <div class="card-header text-white">
+                            <h3 class="mb-0">Solicitar más información</h3>
+                            <p class="mb-3">Complete el formulario y nos pondremos en contacto con usted</p>
+                        </div>
+                        
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label text-light">Nombre completo <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ej: Jhon Smith">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-light">Correo electrónico <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ej: ejemplo@dominio.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label text-light">Teléfono de contacto</label>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="Ej: +56986574654">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label text-light">Asunto <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="asunto">
+                                        <option value="" selected disabled>Seleccione un asunto</option>
+                                        <option value="informacion">Información general</option>
+                                        <option value="cotizacion">Cotización de servicios</option>
+                                        <option value="soporte">Soporte técnico</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mensaje" class="form-label text-light">Mensaje <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Describa su consulta con detalle..."></textarea>
+                                </div>
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label text-light" for="newsletter">Deseo recibir información y novedades por correo electrónico</label>
+                                </div>
+                                <div class="d-grid">
+                                    <button id="submit" class="btn btn-danger btn-lg" type="submit">
+                                        <i class="bi bi-send-fill me-2"></i> Enviar solicitud
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <hr class="border border-5 ">
+            <h2 class="text-light text-center mt-4">Contesta Nuestra encuesta de seguridad!</h2>
+            <button id="btnText" class="btn btn-danger mx-auto mt-3 mb-5" style="width: 200px;">Encuesta</button>
+        </div>
+    </section>
 
+    <div id="textModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for=""></label>
+                <input name="p1" type="radio" value="cazar">cazar
+                <input name="p1" type="radio" value="morder">morder
+                <input name="p1" type="radio" value="vibrar">vibrar
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notyf/3.10.0/notyf.min.js"></script>
     <!-- Bootstrap Script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
