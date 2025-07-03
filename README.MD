@@ -1,19 +1,17 @@
-# Proyecto SecSafe
+# Bienvenidos al proyecto SecSafe!
 
-## Inicio
-
-1. Introducción a la ciberseguridad.
-2. Barra de navegación con enlaces a las demás secciones.
-3. Imagen destacada con un mensaje llamativo.
-
-## Amenazas Comunes
-
+**Secsafe** es una pagina de ciberseguridad que te ayudara a tener las mejores practicas en ciberseguridad, como también conocimiento actualizado sobre las noticias relevantes.
+# Inicio
+Aquí encontraras una breve introducción a la ciberseguridad y su significado
+# Amenazas
+Esta sección contiene :
 1. Información sobre ataques cibernéticos como phishing, ransomware, malware y ataques DDoS.
-2. Uso de tarjetas o secciones interactivas para cada tipo de amenaza.
-3. Un carrusel o acordeón con ejemplos de casos reales.
-
-## Consejos de Seguridad
-
+2. Ejemplos de casos reales con sus respectivas noticias.
+##  Consejos de seguridad
+Esta sección contiene:
 1. Lista de buenas prácticas para protegerse en línea.
-2. Formulario de contacto para solicitar más información (con validación en JavaScript).
-3. Un modal con un "test de seguridad" donde el usuario pueda responder preguntas básicas y recibir retroalimentación.
+2. Formulario de contacto para solicitar más información
+3. Un test de ciberseguridad con 10 preguntas.
+
+## Desarrollado por:
+Allen Nivek
